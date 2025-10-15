@@ -310,15 +310,13 @@
         margin: 17px 0em;
     }
 
-    .brands {
-        /* display: flex;
+    .brands div {
+        display: flex;
         justify-content: center;
-        margin: 1.5em 0em; */
+        align-items: center;
+        margin: 1.5em 0em;
     }
 
-    .line-brand{
-        
-    }
 
     .brands img {
         margin: 0px 29px;
@@ -330,8 +328,32 @@
 
     /* blog */
     .blog {
-        display: block;
         margin: 0 auto;
+        width: 30em;
+        text-align: center;
+    }
+
+    .blog h2 {
+        margin: 1em 0em;
+    }
+
+    .blog p {
+        margin: 1em 0em;
+    }
+
+    .main-parent-card {
+        display: grid;
+        grid-template-columns: repeat(3, 343px);
+    }
+
+    .main-parent-card .child-card-blog {
+        width: 343px;
+        margin: 0 auto;
+        box-shadow: 2px 2px 7px rgb(230 230 230 / 30%);
+    }
+
+    .child-card-blog img {
+            width: 343px;
     }
 </style>
 
@@ -513,29 +535,36 @@
         <!-- les images -->
         <div class="brands">
             <div class="line-brand">
+                <img src="../images/image 4.png" alt="">
+                <img src="../images/image 5.png" alt="">
+                <img src="../images/image 14.png" alt="">
+                <img src="../images/image 15.png" alt="">
+                <img src="../images/image 16.png" alt="">
 
-            
-            <img src="../images/image 4.png" alt="">
-            <img src="../images/image 5.png" alt="">
-            <img src="../images/image 14.png" alt="">
-            <img src="../images/image 15.png" alt="">
-            <img src="../images/image 16.png" alt="" >
-            </div><br>
-            <div class="line-brand">
-            <img src="../images/image 17.svg" alt="">
-            <img src="../images/zoom.svg" alt="">
-            <img src="../images/uber.svg" alt="">
-            <img src="../images/grab.svg" alt="">
+            </div>
+            <div class="">
+                <img src="../images/image 17.svg" alt="">
+                <img src="../images/zoom.svg" alt="">
+                <img src="../images/uber.svg" alt="">
+                <img src="../images/grab.svg" alt="">
             </div>
 
         </div>
-        <!--jjhhh  -->
 
         <!--blog  -->
         <div class="blog">
             <h2>Blog</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
+        <section class="main-parent-card">
+            <div class="child-card-blog">
+                <img src="../images/first-img-card.png" alt="first-img-card">
+                <h2>6 Strategies to Find Your Conference Keynote and Other Speakers</h2>
+                <p>Sekarang, kamu bisa produksi tiket fisik untuk eventmu bersama Bostiketbos. Hanya perlu mengikuti
+                    beberapa langkah mudah.</p>
+                <p>12 Mar - Jhon Doe</p>
+            </div>
+        </section>
 
 
     </main>
