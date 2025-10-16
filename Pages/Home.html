@@ -344,17 +344,102 @@
     .main-parent-card {
         display: grid;
         grid-template-columns: repeat(3, 343px);
+        gap: 2em;
+        margin: 1em 5em;
+        margin: 4em 5em;
     }
 
     .main-parent-card .child-card-blog {
         width: 343px;
-        margin: 0 auto;
+        /* margin: 0 auto; */
         box-shadow: 2px 2px 7px rgb(230 230 230 / 30%);
+
     }
 
     .child-card-blog img {
-            width: 343px;
+        width: 343px;
     }
+
+    .child-card-blog h2,
+    p {
+        padding: 4px 9px;
+    }
+
+    footer {
+        background-color: #0A075F;
+        margin-top: 4em;
+        /* height: 10em; */
+        color: #ffffff;
+        padding: 3em;
+        font-size: 12px;
+        display: grid;
+        grid-template-columns: repeat(4, 258px);
+        gap: 1em 9px;
+
+    }
+
+    .first-section-footer {
+        width: 16em;
+    }
+
+    .first-section-footer .logo {
+        width: 6em;
+    }
+
+    .icons-rs {
+        width: 26px;
+        margin: 9px 7px;
+    }
+
+    .links-footer {
+        text-decoration: none;
+        color: #F3F3F3;
+        margin: 1px 0px;
+    }
+
+    .subscrib-input {
+        position: relative;
+        width: 336px;
+        height: 60.79px;
+        border-radius: 12em;
+        border: none;
+        color: #959595;
+        margin: 2em 0em;
+        padding: 0px 11px;
+    }
+
+    .subscrib-input:focus {
+        background-color: #d0d0d1;
+        outline: none;
+        border: none;
+        color: #0A075F;
+    }
+
+    .subscrib-btn {
+        width: 149.79px;
+        height: 46.4px;
+        background-color: #F5167E;
+        border-radius: 12em;
+        border: none;
+        color: #FFFFFF;
+        position: absolute;
+        top: 240.9em;
+        left: 78.1em;
+    }
+    .hr{
+        border: solid #4C4D8B 1px;
+        border-bottom: none;
+        border-right: none;
+        border-left:none ;
+        width: 75em;
+        margin-left: 12em;
+    }
+    .copyright{
+        margin-left:13em ;
+        width: 16em;
+        margin-top: 1em;
+    }
+
 </style>
 
 <body>
@@ -363,8 +448,8 @@
             <img src="../images/logo.png" alt="none">
             <nav>
                 <a href="#" class="Links-header" style="color:#F5167E ;">Home</a>
-                <a href="#" class="Links-header">Event</a>
-                <a href="#" class="Links-header">Blog</a>
+                <a href="Event.html" class="Links-header">Event</a>
+                <a href="Blog.html" class="Links-header">Blog</a>
                 <a href="#" class="Links-header login">Login</a>
                 <a href="#" class="Links-header Sign-Up">Sign-Up</a>
             </nav>
@@ -564,11 +649,68 @@
                     beberapa langkah mudah.</p>
                 <p>12 Mar - Jhon Doe</p>
             </div>
+            <!-- card2 -->
+            <div class="child-card-blog">
+                <img src="../images/first-img-card.png" alt="first-img-card">
+                <h2>6 Strategies to Find Your Conference Keynote and Other Speakers</h2>
+                <p>Sekarang, kamu bisa produksi tiket fisik untuk eventmu bersama Bostiketbos. Hanya perlu mengikuti
+                    beberapa langkah mudah.</p>
+                <p>12 Mar - Jhon Doe</p>
+            </div>
+            <!-- card3 -->
+            <div class="child-card-blog">
+                <img src="../images/first-img-card.png" alt="first-img-card">
+                <h2>6 Strategies to Find Your Conference Keynote and Other Speakers</h2>
+                <p>Sekarang, kamu bisa produksi tiket fisik untuk eventmu bersama Bostiketbos. Hanya perlu mengikuti
+                    beberapa langkah mudah.</p>
+                <p>12 Mar - Jhon Doe</p>
+            </div>
         </section>
+        <button class="btn-read-more">read more</button>
 
 
     </main>
     <footer>
+        <div class="first-section-footer">
+            <img src="../images/logo.png" class="logo" alt="logo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, mollitia blanditiis sint consequatur
+                repellat provident ad dolores rerum amet, nulla natus</p>
+            <img src="../images/icon1.png" class="icons-rs" alt="facebook">
+            <img src="../images/icon2.png" class="icons-rs" alt="tweter">
+            <img src="../images/icon3.png" class="icons-rs" alt="linkdin">
+        </div>
+        <div>
+            <h2>Plan Events</h2>
+            <p>Create and Set Up </p>
+            <p>Sell Tickets</p>
+            <p>Online RSVP</p>
+            <p>Online Events</p>
+
+        </div>
+        <div>
+            <h2>Eventick</h2>
+            <a href="#" class="links-footer">About Us</a><br>
+            <a href="#" class="links-footer">Press</a><br>
+            <a href="#" class="links-footer">Contact Us </a><br>
+            <a href="#" class="links-footer">Help Center</a><br>
+            <a href="#" class="links-footer">How it Works</a><br>
+            <a href="#" class="links-footer">Privacy</a><br>
+            <a href="#" class="links-footer">Terms</a><br>
+        </div>
+
+        <div>
+            <h2>Stay in the loop</h2>
+            <p>Join our mailing list to stay in the loop with our newest for Event and concert
+            </p>
+            <input type="text" class="subscrib-input" placeholder="Enter your email address..">
+            <button class="subscrib-btn">subscrib now</button>
+        </div>
+        <!-- line and copyright -->
+            <hr class="hr">
+        <p class="copyright">Copyright © 2025 Avi Yansah</p>
+
+      
+        
 
     </footer>
 </body>
