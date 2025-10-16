@@ -1,12 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
+    <style>
+        .event-header {
+            height: 99vh;
+            background-image: url('../images/bg2.png'), url('../images/live-concert-388160.jpg');
+            background-repeat: no-repeat, repeat;
+            background-size: cover, cover;
+            background-position: center, center;
+            position: relative;
+        }
+
+        .shadow {
+            top: 28em;
+            left: 9em;
+        }
+
+        .timer {
+            font-size: 22px;
+            font-weight: normal;
+        }
+
+        .timer span {
+            color: #ff0077;
+            font-weight: bolder;
+        }
+
+        .div-title-header h1 {
+            font-family: 'Jacques Francois Shadow', serif;
+        }
+
+        .search-div {
+            display: inline;
+        }
+
+        .search-div .serach-input {
+            border-radius: 22px;
+            padding: 8px;
+            margin: 11px 7px;
+            background-color: #f5f5f5;
+            border: none;
+            color: black;
+            position: relative;
+            width: 10em;
+
+        }
+
+        .search-div .search-icon {
+            position: absolute;
+            top: 41.3em;
+            left: 70em;
+            width: 13px;
+
+        }
+
+        .one-card-2 {
+            grid-column: span 2;
+            width: 100%;
+        }
+
+        .one-card-2 .img {
+            width: 100%;
+            height: 198.11px;
+            margin-top: -4px;
+        }
+
+        .one-card-2 .date {
+            margin-top: -18px;
+        }
+
+        .one-card-2 .info-event {
+            margin: 2em 3em;
+        }
+
+        .subscrib-btn {
+            width: 149.79px;
+            height: 46.4px;
+            background-color: #F5167E;
+            border-radius: 12em;
+            border: none;
+            color: #FFFFFF;
+            position: absolute;
+            top: 161.9em;
+            left: 78em;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header class="event-header">
+        <div class="nav-links-header">
+            <img src="../images/logo.png" alt="none">
+            <nav>
+                <a href="Home.html" class="Links-header" >Home</a>
+                <a href="Event.html" class="Links-header" style="color:#F5167E ;">Event</a>
+                <a href="Blog.html" class="Links-header">Blog</a>
+                <a href="Login.html" class="Links-header login">Login</a>
+                <a href="signup.html" class="Links-header Sign-Up">Sign-Up</a>
+            </nav>
+        </div>
+        <div class="content-header">
+            <div>
+                <img class="img" src="../images/img-shadow.svg" alt="">
+            </div>
+
+            <div class="div-title-header">
+                <h1>Our <br> events</h1>
+                <p class="timer">
+                    3 <span>D</span> : 12 <span>H</span> : 30 <span>M</span>: 10 S
+                </p>
+                <div>
+                    <button class="btn-event-header">Let’s begin</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </header>
+    <main>
+        <!-- title -->
+        <div class="search">
+            <div>
+                <h1>Upcomming Events</h1>
+            </div>
+            <div>
+                <select class="select-recherche">
+                    <option value="">ABcD ABcD</option>
+                    <option value="">DABc ABcD</option>
+                    <option value="">cBD ABcD</option>
+                </select>
+                <select class="select-recherche">
+                    <option value="">BcD ABcD</option>
+                    <option value="">ABcD BcD</option>
+                    <option value="">DAcD ABcD</option>
+                </select>
+                <select class="select-recherche">
+                    <option value="">AcD ABcD</option>
+                    <option value="">ABcD ABcD</option>
+                    <option value="">AABcD ABcD</option>
+                </select>
+                <div class="search-div">
+                    <input type="text" class="serach-input" placeholder="search">
+                    <img src="../images/search-icon.svg" class="search-icon" alt="">
+                </div>
+
+            </div>
+        </div>
+        <!-- cards -->
+        <section class="cards">
+            <!-- card-1 -->
+            <div class="one-card one-card4">
+                <img src="../images/Rectangle 12.png" alt="">
+                <div class="info-event">
+                    <div class="date">
+                        <span>Sep</span>
+                        <h4>14</h4>
+                    </div>
+                    <div class="text-card">
+                        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde mollitia .</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card-2 -->
+            <div class="one-card">
+                <img src="../images/Rectangle 12-5.png" alt="">
+                <div class="info-event">
+                    <div class="date">
+                        <span>Sep</span>
+                        <h4>14</h4>
+                    </div>
+                    <div class="text-card">
+                        <h3>Lorem ipsum dolor sit amet consectetur .</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            similique .</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card-3 -->
+            <div class="one-card">
+                <img src="../images/Rectangle 12.png" alt="">
+                <div class="info-event">
+                    <div class="date">
+                        <span>Sep</span>
+                        <h4>14</h4>
+                    </div>
+                    <div class="text-card">
+                        <h3>Lorem ipsum dolor sit amet consectetur .</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            similique .</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card-4 -->
+            <div class="one-card one-card-2">
+                <img class="img" src="../images/Rectangle 12.png" alt="">
+                <div class="info-event">
+                    <div class="date">
+                        <span>Sep</span>
+                        <h4>14</h4>
+                    </div>
+                    <div class="text-card">
+                        <h3>Lorem ipsum dolor sit amet consectetur .</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            similique .</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card-5 -->
+            <div class="one-card ">
+                <img src="../images/Rectangle 12.png" alt="">
+                <div class="info-event">
+                    <div class="date">
+                        <span>Sep</span>
+                        <h4>14</h4>
+                    </div>
+                    <div class="text-card">
+                        <h3>Lorem ipsum dolor sit amet consectetur .</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            similique .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="one-card ">
+                <img src="../images/Rectangle 12.png" alt="">
+                <div class="info-event">
+                    <div class="date">
+                        <span>Sep</span>
+                        <h4>14</h4>
+                    </div>
+                    <div class="text-card">
+                        <h3>Lorem ipsum dolor sit amet consectetur .</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            similique .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="one-card ">
+                <img src="../images/Rectangle 12.png" alt="">
+                <div class="info-event">
+                    <div class="date">
+                        <span>Sep</span>
+                        <h4>14</h4>
+                    </div>
+                    <div class="text-card">
+                        <h3>Lorem ipsum dolor sit amet consectetur .</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            similique .</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <button class="btn-read-more">read more</button>
+
+    </main>
+    <footer>
+        <div class="first-section-footer">
+            <img src="../images/logo.png" class="logo" alt="logo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, mollitia blanditiis sint consequatur
+                repellat provident ad dolores rerum amet, nulla natus</p>
+            <img src="../images/icon1.png" class="icons-rs" alt="facebook">
+            <img src="../images/icon2.png" class="icons-rs" alt="tweter">
+            <img src="../images/icon3.png" class="icons-rs" alt="linkdin">
+        </div>
+        <div>
+            <h2>Plan Events</h2>
+            <p>Create and Set Up </p>
+            <p>Sell Tickets</p>
+            <p>Online RSVP</p>
+            <p>Online Events</p>
+
+        </div>
+        <div>
+            <h2>Eventick</h2>
+            <a href="#" class="links-footer">About Us</a><br>
+            <a href="#" class="links-footer">Press</a><br>
+            <a href="#" class="links-footer">Contact Us </a><br>
+            <a href="#" class="links-footer">Help Center</a><br>
+            <a href="#" class="links-footer">How it Works</a><br>
+            <a href="#" class="links-footer">Privacy</a><br>
+            <a href="#" class="links-footer">Terms</a><br>
+        </div>
+
+        <div>
+            <h2>Stay in the loop</h2>
+            <p>Join our mailing list to stay in the loop with our newest for Event and concert
+            </p>
+            <input type="text" class="subscrib-input" placeholder="Enter your email address..">
+            <button class="subscrib-btn">subscrib now</button>
+        </div>
+        <!-- line and copyright -->
+        <hr class="hr">
+        <p class="copyright">Copyright © 2025 Avi Yansah</p>
+
+    </footer>
 </body>
+
 </html>
