@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-        .event-header {
+        /* .event-header {
             height: 99vh;
             background-image: url('../images/bg2.png'), url('../images/live-concert-388160.jpg');
             background-repeat: no-repeat, repeat;
@@ -29,13 +29,13 @@
         .timer span {
             color: #ff0077;
             font-weight: bolder;
-        }
+        } */
 
-        .div-title-header h1 {
+        /* .div-title-header h1 {
             font-family: 'Jacques Francois Shadow', serif;
-        }
+        } */
 
-        .search-div {
+        /* .search-div {
             display: inline;
         }
 
@@ -57,9 +57,9 @@
             left: 70em;
             width: 13px;
 
-        }
+        } */
 
-        .one-card-2 {
+        /* .one-card-2 {
             grid-column: span 2;
             width: 100%;
         }
@@ -76,9 +76,9 @@
 
         .one-card-2 .info-event {
             margin: 2em 3em;
-        }
+        } */
 
-        .subscrib-btn {
+        /* .subscrib-btn-event {
             width: 149.79px;
             height: 46.4px;
             background-color: #F5167E;
@@ -88,7 +88,7 @@
             position: absolute;
             top: 161.9em;
             left: 78em;
-        }
+        } */
     </style>
 </head>
 
@@ -115,7 +115,7 @@
                     3 <span>D</span> : 12 <span>H</span> : 30 <span>M</span>: 10 S
                 </p>
                 <div>
-                    <button class="btn-event-header">Let’s begin</button>
+                    <a href="#event"><button class="btn-event-header">Let’s begin</button></a>
                 </div>
 
             </div>
@@ -124,7 +124,7 @@
     </header>
     <main>
         <!-- title -->
-        <div class="search">
+        <div class="search" id="event">
             <div>
                 <h1>Upcomming Events</h1>
             </div>
@@ -298,7 +298,7 @@
             <p>Join our mailing list to stay in the loop with our newest for Event and concert
             </p>
             <input type="text" class="subscrib-input" placeholder="Enter your email address..">
-            <button class="subscrib-btn">subscrib now</button>
+            <button class="subscrib-btn-event ">subscrib now</button>
         </div>
         <!-- line and copyright -->
         <hr class="hr">

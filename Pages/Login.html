@@ -7,56 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-        .login-header {
-            height: 16vh;
-            background-color: #5028C2;
-            background-image: none;
-        }
-
-        .nav-links-header {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 1.5em 0em;
-        }
-
-        .nav-links-header img {
-            width: 6em;
-        }
-
-        .nav-links-header nav a {
-            text-decoration: none;
-            color: white;
-            margin: 1.5em;
-        }
-
-        .main-login {
-            margin-top: 4em;
-        }
-
-        .login {
-            background-color: #F5167E;
-        }
-
-        .section-login {
-            display: grid;
-            grid-template-columns: repeat(2, 340px);
-            background-color: #D7D7D7;
-            align-items: center;
-            justify-content: space-evenly;
-            justify-content: space-evenly;
-            width: 51.5em;
-            margin: 0 auto;
-            border-radius: 12px;
-        }
-
-        .div-form-login h2 {
+        /* .div-form-login h2 {
             text-align: center;
             font-size: 28px;
             font-weight: 600;
-        }
+        } */
 
-        .inputs-login {
+        /* .inputs-login {
             display: block;
             width: 24.375em;
             height: 4.438em;
@@ -71,77 +28,33 @@
             color: #000000;
             padding-left: 1em;
 
-        }
-
-        .div-form-login form a {
-            text-decoration: none;
-            color: #05077F;
-        }
-
-        .div-form-login form p {
-            margin: 8px -9px;
-        }
-
-        .btn-login {
-            width: 9.375em;
-            height: 3.749em;
-            border-radius: 51px;
-            outline: #F5167E 2px solid;
-            border: none;
-            color: #F5167E;
-            background-color: #D5D5D5;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .img-login {
-            width: 24em;
-            margin-top: 3px;
-            /* border-radius: 10px; */
-            border-bottom-right-radius: 12px;
-            border-top-right-radius: 12px;
-            height: 18.em;
-            background-color: white;
-
-        }
-        .subscribBtn-login{
-        
-                width: 149.79px;
-    height: 46.4px;
-    background-color: #F5167E;
-    border-radius: 12em;
-    border: none;
-    color: #FFFFFF;
-    position: absolute;
-    top: 53.9em;
-    left: 77.9em;
-        }
+        } */        
     </style>
 </head>
 
 <body>
-    <header class="login-header">
+    <header class="login-signup-header">
         <div class="nav-links-header">
             <img src="../images/logo.png" alt="none">
             <nav>
                 <a href="Home.html" class="Links-header">Home</a>
                 <a href="Event.html" class="Links-header">Event</a>
                 <a href="Blog.html" class="Links-header">Blog</a>
-                <a href="Login.html" class="Links-header login">Login</a>
+                <a href="Login.html" class="Links-header login" style="background-color: #F5167E;">Login</a>
                 <a href="signup.html" class="Links-header Sign-Up">Sign-Up</a>
             </nav>
         </div>
     </header>
-    <main class="main-login">
+    <main class="main">
         <section class="section-login">
-            <div class="div-form-login">
+            <div class="div-form-loginSignUp">
                 <form>
                     <h2>Login</h2>
-                    <input type="text" class="inputs-login" placeholder="mohammed@gmail.com">
-                    <input type="text" class="inputs-login" placeholder="Password">
-                    <button class="btn-login">Login</button>
+                    <input type="text" class="inputs" placeholder="mohammed@gmail.com">
+                    <input type="text" class="inputs" placeholder="Password">
+                    <button class="btn-soumission">Login</button>
                     <a href="#">reset password</a>
-                    <p>No account? <a href="#">Create one</a></p>
+                    <p>No account? <a href="signup.html">Create one</a></p>
 
                 </form>
             </div>
