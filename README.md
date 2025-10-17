@@ -2,7 +2,7 @@
 ## titre du projet
 * Festava
 ## description
-notre projet est site web multi-page developper en html et css 
+notre projet est site web multi-page(Home,event,blog,login,signup) developper en html et css 
 ## fonctionnalier
 -la page Home qui represente notre site web.
 -voir toutes les l'événement.
